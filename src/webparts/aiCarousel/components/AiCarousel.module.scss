@@ -1,0 +1,165 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.aiCarousel {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.AiSlider {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	height: 381px;
+	box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+	div {
+		height: 100%;
+	}
+	.slick-arrow {
+		position: absolute;
+		bottom: 50%;
+		z-index: 99;
+		cursor: pointer;
+		&.slick-prev {
+			font-size: 0;
+			border: 0;
+			background-color: transparent;
+			left: 24px;
+			&::after {
+				content: "";
+				width: 24px;
+				height: 24px;
+				border: 2px solid #fff;
+				position: absolute;
+				transform: rotate(45deg);
+				border-right: 0;
+				border-top: 0;
+			}
+		}
+		&.slick-next {
+			right: 48px;
+			font-size: 0;
+			border: 0;
+			background-color: transparent;
+			&::after {
+				content: "";
+				width: 24px;
+				height: 24px;
+				border: 2px solid #fff;
+				position: absolute;
+				transform: rotate(45deg);
+				border-left: 0;
+				border-bottom: 0;
+			}
+		}
+	}
+  .AiSlide {
+	position: relative;
+  height: 100%;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100px;
+		background-color: rgba(0, 0, 0, 0.7);
+		bottom: 0;
+	}
+	span {
+		position: absolute;
+		bottom: 42px;
+		left: 50px;
+		color: #fff;
+		font-size: 32px;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	p {
+		position: absolute;
+		bottom: 42px;
+		left: 50px;
+		color: #fff;
+		font-size: 16px;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		height: 100%;
+	}
+}
+.slick-dots {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 1rem 0;
+	list-style-type: none;
+	gap: 16px;
+	li {
+		margin: 0 0.25rem;
+		&.slick-active {
+			button {
+				position: relative;
+				&::after {
+					width: 72%;
+					top: 2px;
+					left: 2px;
+					height: 73%;
+					border-radius: 50%;
+					content: "gg";
+					background-color: #fff;
+					position: absolute;
+				}
+			}
+		}
+	}
+	button {
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		padding: 0;
+		border: none;
+		border-radius: 100%;
+		background-color: transparent;
+		border: 1px solid #fff;
+		text-indent: -9999px;
+	}
+}
+}
+

@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.16.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "ai-carousel-react",
+    "libraryId": "313a3284-e43c-4d97-a122-27565963c518",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ai-carousel-react",
+    "solutionShortDescription": "ai-carousel-react description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

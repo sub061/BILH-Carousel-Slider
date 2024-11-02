@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ai-carousel-react-client-side-solution",
+    "id": "313a3284-e43c-4d97-a122-27565963c518",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ai-carousel-react description"
+      },
+      "longDescription": {
+        "default": "ai-carousel-react description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ai-carousel-react Feature",
+        "description": "The feature that activates elements of the ai-carousel-react solution.",
+        "id": "eb20ac1c-ea00-44a3-b83c-2731457e6d2f",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ai-carousel-react.sppkg"
+  }
+}
