@@ -22,6 +22,16 @@ const settings: Settings = {
   fade: true,
 };
 
+function truncateText(text: string, wordLimit: number = 28): string {
+  const words = text.split(" ");
+
+  if (words.length <= wordLimit) {
+    return text; // Return the original text if it's within the limit
+  }
+
+  return words.slice(0, wordLimit).join(" ") + "...";
+}
+
 export default class AiCarousel extends React.Component<
   IAiCarouselProps,
   IAiCarouselWpState
@@ -47,7 +57,7 @@ export default class AiCarousel extends React.Component<
             {item?.Title ? (
               <span>{item.Title}</span>
             ) : (
-              <p>{item.Description}</p>
+              <p> {truncateText(item.Description)}</p>
             )}
             <img src={item?.ImageUrl["Url"]} alt={item?.Title} />
           </a>
@@ -58,7 +68,7 @@ export default class AiCarousel extends React.Component<
             {item?.Title ? (
               <span>{item.Title}</span>
             ) : (
-              <p>{item.Description}</p>
+              <p>{truncateText(item.Description)}</p>
             )}
             <img src={item?.ImageUrl["Url"]} alt={item?.Title} />
           </div>
